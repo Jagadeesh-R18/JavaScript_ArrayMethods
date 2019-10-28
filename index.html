@@ -1,0 +1,61 @@
+ 
+<!DOCTYPE html>
+ 
+<html>
+
+<head></head>
+
+<body>
+
+<p>Click The My Location Button to get your Location.</p>
+
+<button> My Location </button>
+
+
+
+	<script>
+		//forEach()=> Iterate over each items.
+		var array1 = ["Dog", "Elephant", "Animal"];
+		array1.forEach( function(item, index){
+			console.log(item + ' is cool' , index);
+		});
+		
+		//Map()
+		var array1 = ["Dog", "Elephant", "Animal"];
+		var array2 = array1.map(function(item){
+			return item + ' is really cool' ;
+		});
+		console.log(array2);
+		
+		//Filter()=> Return an array with items that pass the test (create a copy)
+		var array1 = [1,2,3,4,5,6,7,8,9];
+		var array2 = array1.filter(function(item){
+			//return item >= 3;
+			return item === 2 || item >=4;
+		});
+		
+		console.log(array2);
+		
+		// Join()=> Joins together items in the array
+		var array1 = [1,2,3.,4,5,6,7];
+		var array2 = array1.join("is ,");
+		console.log(array2);
+		
+		//Concat()=>Joins together two array 
+		var array1 = [1,2,3,4,5,6,7,8,9];
+		var array2 = [10,11,12,13,14,15];
+		var concated = array1.concat(array2);
+		
+		console.log(concated);
+		
+		//Splice()=> Reomove or Insert items. [First number is starting item, second is how many to delete/replace, third is what to insert (optional)]
+		var array1 = [1,2,3,4,5,6,7,8,9];
+		array1.splice(1,1);
+		console.log(array1);
+		
+	 
+	</script>
+ 
+</body>
+ 
+</html>
